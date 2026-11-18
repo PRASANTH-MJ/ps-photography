@@ -1,0 +1,74 @@
+<section class="frames" id="frames">
+  <div class="section-head reveal">
+    <h2>Photo frames for your walls</h2>
+    <p>Pick a photo, a frame and a size. The preview is to scale, hung above a 7-foot sofa, so you can see how big it really is.</p>
+  </div>
+  <div class="frame-studio">
+    <div class="wall" id="wall">
+      <div class="wall-art" id="wallArt" data-style="teak">
+        <div class="mat"><img id="frameImg" src="images/hero.jpg" alt="Preview of the selected photo in the frame"></div>
+      </div>
+      <svg class="sofa" viewBox="0 0 84 34" aria-hidden="true">
+        <rect x="5" y="0" width="74" height="19" rx="3.5" fill="#0F5257"/>
+        <rect x="5" y="2" width="36" height="14" rx="3" fill="#13646A"/>
+        <rect x="43" y="2" width="36" height="14" rx="3" fill="#13646A"/>
+        <rect x="4" y="16" width="76" height="12" rx="2.5" fill="#0C4448"/>
+        <rect x="0" y="9" width="9" height="20" rx="3.5" fill="#0A3B3F"/>
+        <rect x="75" y="9" width="9" height="20" rx="3.5" fill="#0A3B3F"/>
+        <rect x="9" y="29" width="2" height="5" fill="#3A2A1C"/>
+        <rect x="73" y="29" width="2" height="5" fill="#3A2A1C"/>
+      </svg>
+      <p class="wall-note" id="wallNote">12 × 18 in print</p>
+    </div>
+
+    <div class="frame-opts">
+      <fieldset>
+        <legend>Photo</legend>
+        <div class="pick-photos" id="pickPhotos">
+          <button type="button" class="is-on" data-src="images/hero.jpg" aria-pressed="true"><img src="images/hero.jpg" alt="Wedding couple by a lake"></button>
+          <button type="button" data-src="images/wedding-confetti.jpg" aria-pressed="false"><img src="images/wedding-confetti.jpg" alt="Confetti kiss"></button>
+          <button type="button" data-src="images/model-golden.jpg" aria-pressed="false"><img src="images/model-golden.jpg" alt="Golden-hour portrait"></button>
+          <button type="button" data-src="images/baby-bear.jpg" aria-pressed="false"><img src="images/baby-bear.jpg" alt="Baby in a teddy suit"></button>
+          <label class="upload"><input type="file" id="ownPhoto" accept="image/*"><span>+ Your photo</span></label>
+        </div>
+        <p class="hint">Your photo is only previewed on this device. It isn't uploaded anywhere.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Frame</legend>
+        <div class="styles" id="frameStyles">
+          <button type="button" data-style="teak" aria-pressed="true" class="is-on"><i class="sw sw-teak"></i>Teak wood</button>
+          <button type="button" data-style="walnut" aria-pressed="false"><i class="sw sw-walnut"></i>Dark walnut</button>
+          <button type="button" data-style="gold" aria-pressed="false"><i class="sw sw-gold"></i>Antique gold</button>
+          <button type="button" data-style="black" aria-pressed="false"><i class="sw sw-black"></i>Matte black</button>
+          <button type="button" data-style="white" aria-pressed="false"><i class="sw sw-white"></i>Gallery white</button>
+          <button type="button" data-style="canvas" aria-pressed="false"><i class="sw sw-canvas"></i>Canvas, no frame</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Size</legend>
+        <div class="sizes" id="frameSizes">
+          <button type="button" data-size="8x12" aria-pressed="false">8 × 12</button>
+          <button type="button" data-size="12x18" aria-pressed="true" class="is-on">12 × 18</button>
+          <button type="button" data-size="16x24" aria-pressed="false">16 × 24</button>
+          <button type="button" data-size="20x30" aria-pressed="false">20 × 30</button>
+          <button type="button" data-size="24x36" aria-pressed="false">24 × 36</button>
+        </div>
+        <div class="toggles">
+          <div class="seg" role="group" aria-label="Orientation">
+            <button type="button" data-orient="portrait" aria-pressed="false">Portrait</button>
+            <button type="button" data-orient="landscape" aria-pressed="true" class="is-on">Landscape</button>
+          </div>
+          <label class="switch"><input type="checkbox" id="matToggle" checked><span></span>White mount</label>
+        </div>
+      </fieldset>
+
+      <div class="frame-total">
+        <div><span class="total-label">Your frame</span><strong id="framePrice">₹2,880</strong></div>
+        <button type="button" class="btn btn-primary" id="frameOrder">Order on WhatsApp</button>
+      </div>
+      <p class="hint">Prices include the print, glass and wall hooks. Delivery in Chennai in 5 days.</p>
+    </div>
+  </div>
+</section>

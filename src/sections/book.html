@@ -1,0 +1,29 @@
+<section class="book" id="book">
+  <div class="book-copy">
+    <h2>Check if your date is free</h2>
+    <p>Fill this in and it opens WhatsApp with your details ready to send. We reply within a few hours.</p>
+    <ul class="contact">
+      <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+      <li><a href="mailto:hello@psphotography.in">hello@psphotography.in</a></li>
+      <li>12, 2nd Avenue, Anna Nagar, Chennai 600040</li>
+      <li>Studio open 9 am – 9 pm, all days</li>
+    </ul>
+  </div>
+  <form id="bookForm" class="form reveal" novalidate>
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Phone<input name="phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
+    <label>Shoot type
+      <select name="type" required>
+        <option value="">Choose one</option>
+        <option>Wedding</option><option>Pre-wedding</option><option>Post-wedding</option>
+        <option>Model portfolio</option><option>Baby & newborn</option><option>Maternity</option>
+        <option>Birthday / event</option><option>Album / photo frame order</option><option>Something else</option>
+      </select>
+    </label>
+    <label>Date<input name="date" type="date"></label>
+    <label>City / venue<input name="venue" placeholder="e.g. Mylapore, Chennai"></label>
+    <label class="full">Anything else?<textarea name="msg" rows="3" placeholder="Number of days, rituals, ideas…"></textarea></label>
+    <p class="form-error" id="formError" role="alert"></p>
+    <button class="btn btn-primary full" type="submit">Send on WhatsApp</button>
+  </form>
+</section>
